@@ -1,10 +1,8 @@
 services:
   - type: web
     name: malaria-api
-    env: python
+    env: docker
     plan: free
-    buildCommand: pip install -r Summative/API/requirements.txt
-    startCommand: uvicorn Summative.API.app:app --host 0.0.0.0 --port 10000
-    runtime: python
-    region: oregon
+    repo: https://github.com/MichaelMusembi/linear_regression_model
     branch: main
+    autoDeploy: true
