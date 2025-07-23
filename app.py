@@ -14,6 +14,15 @@ app = FastAPI(
 
 predictor = MalariaPredictor()
 
+# Root endpoint for health check or welcome
+@app.get("/", tags=["Root"])
+async def root():
+    return {
+        "message": "Welcome to the Malaria Prediction API!",
+        "docs_url": "/docs",
+        "usage": "Send a POST request to /predict with the required features."
+    }
+
 # Pydantic model for request validation
 class PredictionInput(BaseModel):
     """All fields use Field(..., alias="original name") to handle spaces in JSON keys"""
