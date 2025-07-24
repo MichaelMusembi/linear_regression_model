@@ -4,10 +4,10 @@ services:
     env: docker
     region: oregon
     plan: free
-    dockerfilePath: ./Dockerfile
-    branch: main
     repo: https://github.com/MichaelMusembi/linear_regression_model
+    branch: main
     rootDir: Summative/API
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: PORT
         value: 8000
