@@ -10,11 +10,11 @@ COPY requirements.txt .
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy everything else
+# Copy everything else into the container
 COPY . .
 
-# Expose port (FastAPI runs on 8000 by default)
+# Expose port
 EXPOSE 8000
 
-# Command to run your app
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+# Run the app (adjusted path to app.py)
+CMD ["uvicorn", "Summative.API.app:app", "--host", "0.0.0.0", "--port", "8000"]
