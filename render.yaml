@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: malaria-api
-    env: docker
-    plan: free
-    repo: https://github.com/MichaelMusembi/linear_regression_model
-    branch: main
-    autoDeploy: true
