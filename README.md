@@ -25,7 +25,7 @@ Contents include:
 ** https://linear-regression-model-qjrd.onrender.com/docs**
 
 **YouTube Demo Video URL**:
-**
+https://youtu.be/vaVTie3-xiU
 
 ### ➕ Example API Request
 `POST /predict`  
