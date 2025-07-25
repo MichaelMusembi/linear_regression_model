@@ -12,15 +12,14 @@ All source files are hosted here:
 Contents include:
 - `Notebook/`: Jupyter notebook for data analysis, preprocessing, and model training
 - `API/`: FastAPI backend for serving predictions
-- `FlutterApp/`: Flutter mobile app to consume and visualize API predictions
+- `flutter_app/`: Flutter mobile app to consume and visualize API predictions
 
 ---
 
 ## 📡 Public API Endpoint (Live)
 
 🔗 **Base URL**:  
-**https://linear-regression-model-qjrd.onrender.com/** (Replace this with your actual deployed Render or public URL)
-
+**https://linear-regression-model-qjrd.onrender.com/** 
 📘 **Swagger UI Docs**:  
 ** https://linear-regression-model-qjrd.onrender.com/docs**
 
