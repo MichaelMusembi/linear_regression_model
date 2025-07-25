@@ -71,7 +71,7 @@ We use real-world data sourced from Kaggle:
 
    ```bash
    git clone https://github.com/MichaelMusembi/linear_regression_model.git
-   cd linear_regression_model/FlutterApp
+   cd /linear_regression_model/Summative/flutter_app
    ```
 
 2. **Install dependencies**
