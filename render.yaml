@@ -2,8 +2,12 @@ services:
   - type: web
     name: malaria-api
     env: docker
-    region: oregon
     plan: free
-    dockerfilePath: ./Dockerfile
-    branch: main
+    region: oregon
     repo: https://github.com/MichaelMusembi/linear_regression_model
+    branch: main
+    dockerfilePath: ./Dockerfile
+    rootDir: .
+    envVars:
+      - key: PORT
+        value: 8000

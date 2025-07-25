@@ -1,18 +1,20 @@
-# Use official slim Python image
+# Use an official lightweight Python image
 FROM python:3.10-slim
 
-# Set working directory
+# Set working directory inside container
 WORKDIR /app
 
-# Copy and install dependencies
+# Copy dependencies file
 COPY requirements.txt .
+
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy rest of the app
+# Copy everything else into the container
 COPY . .
 
 # Expose port
 EXPOSE 8000
 
-# Run FastAPI app
+# Run the app
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
